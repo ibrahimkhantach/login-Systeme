@@ -1,10 +1,10 @@
 <?php
 
-$db = "mysql" ;
-$host = "localhost";
-$user = "root";
-$pass = "ibrahimKHANTACH2004";
-$dbname = "loginSysteme";
+$db = $_ENV['DB'];
+$host = $_ENV['HOST'];
+$user = $_ENV['USER'];
+$pass = $_ENV['PASS'];
+$dbname = $_ENV['DB_NAME'];
 
 try{
     $conn = new PDO("$db:host=$host;dbname=$dbname", $user, $pass);
